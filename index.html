@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="path/to/owl.carousel.min.css">
+<link rel="stylesheet" href="path/to/owl.theme.default.min.css">
+<link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</script>
+ <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
+   </script>
+<script src="path/to/jquery.min.js"></script>
+<script src="path/to/owl.carousel.min.js"></script>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+ 
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+<style>
+    .email-block {
+  display: flex;
+ 
+  justify-content: center;
+  width: 300px;
+  margin: 0 auto;
+}
+
+input[type="email"] {
+  padding: 10px;
+  margin-right: 10px;
+  width: 70%;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+</style>
+<style>
+  .client_list_cont {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  margin: 3rem 0rem;
+  padding: 45px 0;
+}
+.client_list_cont h2 {
+  color: #fff;
+}
+.client_list_cont .client_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.client_list_cont .client_list::-webkit-scrollbar {
+  display: none;
+}
+.client_list_cont .client_list .item {
+  display: flex;
+  justify-content: center;
+}
+.client_list_cont .client_list img {
+  width: 100%;
+  max-width: 240px;
+  width: fit-content;
+  margin: 0 auto;
+}
+@media screen and (max-width: 525px) {
+  .client_list_cont {
+    margin-top: 5rem;
+    padding: 0;
+  }
+}
+</style>
+<style>
+  .scroller {
+  max-width: 100%
+}
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 60s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+</style>
+<style>
+  .scroller1 {
+  max-width: 100%
+}
+
+.scroller__inner1 {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.scroller1[data-animated="true"] {
+  overflow: hidden;
+
+}
+
+.scroller1[data-animated="true"] .scroller__inner1 {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller1[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller1[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller1[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+
+.scroller1[data-speed="slow"] {
+  --_animation-duration: 60s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+</style>
+<style>
+  /* Base styles */
+form {
+    width: 60%;
+    gap: 20px;
+}
+
+label {
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+input {
+    width: 80%;
+}
+
+#btn1 {
+    background-color: red;
+    color: white;
+    width: 80%;
+    border: red;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 600px) {
+    form {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    input {
+        width: 100%; /* Take full width for smaller screens */
+    }
+}
+
+/* Media Query for larger screens */
+@media only screen and (min-width: 1200px) {
+    form {
+        width: 50%; /* Adjust width for larger screens */
+    }
+}
+
+</style>
+
+<style>
+
+
+@media screen and (max-width: 1000px) {
+  #lastdiv1{
+    font-size: 22px;
+     color: #fff;
+     display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+  }
+  #box1{
+    font-size: 10px;
+     margin: 2px;
+   }
+  #testi11 {
+    height: 240px;
+    width: 240px;
+    display: flex;
+  flex-direction: column;
+  background-image: url(./assets/team.png);
+  background-color: #d8d3d3;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 40px;
+  margin-right: 10px;
+  }
+  #getq{
+    display: flex; 
+    flex-grow: inherit;  
+    justify-content: center;
+  }
+  #getq1{
+    height: 90%; 
+    width: 90%;
+  }
+  #box1{
+    font-size: 10px;
+     margin: 6px;
+   } 
+  #testi11 {
+    height: 210px;
+    width: 220px;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(./assets/team.png);
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 60px;
+ 
+  }
+
+  #testi12 {
+     display: flex; 
+    height: 60px;
+     width: 60px; 
+    border-radius: 50%; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+     position: relative; 
+    top: 6%; 
+    left: 3%; 
+    background-color: #fff;
+     border:4px solid white 
+  }
+
+  #testi13 {
+    display: flex;
+     justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    margin-bottom: 30px; 
+    position: relative; 
+    top:-16%; 
+    margin-top: 35px;
+  }
+  #testi14 {
+    font-size: 14px; 
+     margin-bottom: 0px; 
+    text-align: center;
+  }
+  #testi15 {
+    font-size: 11px;
+     margin-top:  5px; 
+    margin-bottom: 0px; 
+    text-align: center;
+  }
+  #testi16 {
+    display: flex; 
+    font-size: 10px;  
+    margin: 15px;
+     text-align: center;
+  }
+
+  #formp1{
+    color: white;
+     font-size: 20px;
+      margin-bottom: 30px;
+  }
+  #formp2{
+    color: white; 
+    font-size: 11px;
+    margin: 5px;
+  }
+  #formp3{
+    color: white;
+    font-size: 11px;
+    margin: 5px;
+  }
+  #formdiv1{
+    display: flex; 
+    flex-wrap: wrap;
+    margin-top: -17%; 
+    width: 60%;
+  }
+
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1149px) {
+  #lastdiv1{
+    font-size: 25px;
+     color: #fff;
+     display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+  }
+  #box1{
+    font-size: 12px;
+     margin: 6px;
+   } 
+  #testi11 {
+    height: 210px;
+    width: 220px;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(./assets/team.png);
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 60px;
+ 
+  }
+
+  #testi12 {
+     display: flex; 
+    height: 60px;
+     width: 60px; 
+    border-radius: 50%; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+     position: relative; 
+    top: 6%; 
+    left: 3%; 
+    background-color: #fff;
+     border:4px solid white 
+  }
+
+  #testi13 {
+    display: flex;
+     justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    margin-bottom: 30px; 
+    position: relative; 
+    top:-16%; 
+    margin-top: 35px;
+  }
+  #testi14 {
+    font-size: 14px; 
+     margin-bottom: 0px; 
+    text-align: center;
+  }
+  #testi15 {
+    font-size: 11px;
+     margin-top:  5px; 
+    margin-bottom: 0px; 
+    text-align: center;
+  }
+  #testi16 {
+    display: flex; 
+    font-size: 10px;  
+    margin: 15px;
+     text-align: center;
+  }
+
+  #formp1{
+    color: white;
+     font-size: 25px;
+      margin-bottom: 30px;
+  }
+  #formp2{
+    color: white; 
+    font-size: 13px;
+    margin: 5px;
+  }
+  #formp3{
+    color: white;
+    font-size: 13px;
+    margin: 5px;
+  }
+  #formdiv1{
+    display: flex; 
+    flex-wrap: wrap;
+    margin-top: -17%; 
+    width: 60%;
+  }
+  #getq{
+    display: flex; 
+    flex-grow: inherit;  
+    justify-content: center;
+  }
+  #getq1{
+    height: 100%; 
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1150px) and (max-width: 1249px) {
+  #lastdiv1{
+    font-size: 25px;
+     color: #fff;
+     display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+  }
+  #box1{
+    font-size: 15px;
+     margin: 3px;
+   }
+  #testi11 {
+    height: 200px;
+    width: 190px;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(./assets/team.png);
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 60px;
+ 
+  }
+
+  #testi12 {
+     display: flex; 
+    height: 60px;
+     width: 60px; 
+    border-radius: 50%; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+     position: relative; 
+    top: 6%; 
+    left: 3%; 
+    background-color: #fff;
+     border:4px solid white 
+  }
+
+  #testi13 {
+    display: flex;
+     justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    margin-bottom: 30px; 
+    position: relative; 
+    top:-16%; 
+    margin-top: 35px;
+  }
+  #testi14 {
+    font-size: 14px; 
+     margin-bottom: 0px; 
+    text-align: center;
+  }
+  #testi15 {
+    font-size: 11px;
+     margin-top:  5px; 
+    margin-bottom: 0px; 
+    text-align: center;
+  }
+  #testi16 {
+    display: flex; 
+    font-size: 10px;  
+    margin: 15px;
+     text-align: center;
+  }
+
+  #formp1{
+    color: white;
+     font-size: 30px;
+      margin-bottom: 30px;
+  }
+  #formp2{
+    color: white; 
+    font-size: 17px;
+    margin: 5px;
+  }
+  #formp3{
+    color: white;
+    font-size: 17px;
+    margin: 5px;
+  }
+  #formdiv1{
+    display: flex; 
+    flex-wrap: wrap;
+    margin-top: -17%; 
+    width: 60%;
+  }
+  #getq{
+    display: flex; 
+    flex-grow: inherit;  
+    justify-content: center;
+  }
+  #getq1{
+    height: 90%; 
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1400px)  {
+  #lastdiv1{
+    font-size: 25px;
+     color: #fff;
+     display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+  }
+  #box1{
+    font-size: 15px;
+     margin: 3px;
+   } 
+  #testi11 {
+    height: 220px;
+    width: 210px;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(./assets/team.png);
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 50px;
+ 
+  }
+
+  #testi12 {
+     display: flex; 
+    height: 60px;
+     width: 60px; 
+    border-radius: 50%; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+     position: relative; 
+    top: -6%; 
+    left: 2%; 
+    background-color: #fff;
+     border:4px solid white 
+  }
+
+  #testi13 {
+    display: flex;
+     justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    margin-bottom: 30px; 
+    position: relative; 
+    top:-10%; 
+    margin-top: 27px;
+  }
+  #testi14 {
+    font-size: 14px; 
+     margin-bottom: 0px; 
+    text-align: center;
+  }
+  #testi15 {
+    font-size: 11px;
+     margin-top:  5px; 
+    margin-bottom: 0px; 
+    text-align: center;
+  }
+  #testi16 {
+    display: flex; 
+    font-size: 9px;  
+    margin: 15px;
+     text-align: center;
+  }
+  #formp1{
+    color: white;
+     font-size: 32px;
+      margin-bottom: 25px;
+  }
+  #formp2{
+    color: white; 
+    font-size: 19px;
+    margin: 5px;
+  }
+  #formp3{
+    color: white;
+    font-size: 19px;
+    margin: 5px;
+  }
+  #formdiv1{
+    display: flex; 
+    flex-wrap: wrap;
+    margin-top: -15%; 
+    width: 60%;
+  }
+  #getq{
+    display: flex; 
+    flex-grow: inherit;  
+    justify-content: center;
+  }
+  #getq1{
+    height: 90%; 
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1550px)  {
+  #lastdiv1{
+    font-size: 25px;
+     color: #fff;
+     display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+  }
+  #box1{
+    font-size: 15px;
+     margin: 3px;
+   } 
+  #testi10{
+    margin-left: 10px;
+  }
+  #testi11 {
+    height: 240px;
+    width: 235px;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(./assets/team.png);
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 65px;
+
+  }
+
+  #testi12 {
+     display: flex; 
+    height: 65px;
+     width: 65px; 
+    border-radius: 50%; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+     position: relative; 
+    top: -4%; 
+    left: 2%; 
+    background-color: #fff;
+     border:4px solid white 
+  }
+
+  #testi13 {
+    display: flex;
+     justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    margin-bottom: 30px; 
+    position: relative; 
+    top:-15%; 
+    margin-top: 27px;
+  }
+  #testi14 {
+    font-size: 15px; 
+     margin-bottom: 0px; 
+    text-align: center;
+  }
+  #testi15 {
+    font-size: 13px;
+     margin-top:  5px; 
+    margin-bottom: 0px; 
+    text-align: center;
+  }
+  #testi16 {
+    display: flex; 
+    font-size: 11px;  
+    margin: 15px;
+     text-align: center;
+  }
+  #formp1{
+    color: white;
+     font-size: 38px;
+      margin-bottom: 25px;
+  }
+  #formp2{
+    color: white; 
+    font-size: 23px;
+    margin: 5px;
+  }
+  #formp3{
+    color: white;
+    font-size: 23px;
+    margin: 5px;
+  }
+  #formdiv1{
+    display: flex; 
+    flex-wrap: wrap;
+    margin-top: -12%; 
+    width: 60%;
+  }
+  #getq{
+    display: flex; 
+    flex-grow: inherit;  
+    justify-content: center;
+  }
+  #getq1{
+    height: 90%; 
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1551px) and (max-width: 1649px)   {
+  #lastdiv1{
+    font-size: 25px;
+     color: #fff;
+     display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+  }
+  #box1{
+    font-size: 15px;
+     margin: 3px;
+   }
+  #testi10{
+    margin-left: 5px;
+  }
+  #testi11 {
+    height: 270px;
+    width: 255px;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(./assets/team.png);
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 65px;
+
+  }
+
+  #testi12 {
+     display: flex; 
+    height: 70px;
+     width: 70px; 
+    border-radius: 50%; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+     position: relative; 
+    top: -4%; 
+    left: 3%; 
+    background-color: #fff;
+     border:4px solid white 
+  }
+
+  #testi13 {
+    display: flex;
+     justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    margin-bottom: 30px; 
+    position: relative; 
+    top:-12%; 
+    margin-top: 30px;
+  }
+  #testi14 {
+    font-size: 16px; 
+     margin-bottom: 0px; 
+    text-align: center;
+  }
+  #testi15 {
+    font-size: 14px;
+     margin-top:  5px; 
+    margin-bottom: 0px; 
+    text-align: center;
+  }
+  #testi16 {
+    display: flex; 
+    font-size: 12px;  
+    margin: 15px;
+     text-align: center;
+  }
+
+  #formp1{
+    color: white;
+     font-size: 40px;
+      margin-bottom: 25px;
+  }
+  #formp2{
+    color: white; 
+    font-size: 25px;
+    margin: 5px;
+  }
+  #formp3{
+    color: white;
+    font-size: 25px;
+    margin: 5px;
+  }
+  #formdiv1{
+    display: flex; 
+    flex-wrap: wrap;
+    margin-top: -10%; 
+    width: 60%;
+  }
+  #getq{
+    display: flex; 
+    flex-grow: inherit;  
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1650px) and (max-width:1699px) {
+  #lastdiv1{
+    font-size: 25px;
+     color: #fff;
+     display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+  }
+  #testi10{
+    margin-left: 20px;
+  }
+  #box1{
+    font-size: 15px;
+     margin: 3px;
+   }
+   #getq{
+    display: flex; 
+    flex-grow: inherit;  
+    justify-content: center;
+  }
+  #getq1{
+    height: 90%; 
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1650px)    {
+   #box1{
+    font-size: 15px;
+     margin: 3px;
+   }
+  #testi11 {
+    height: 280px;
+    width: 270px;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(./assets/team.png);
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 65px;
+
+  }
+
+  #testi12 {
+     display: flex; 
+    height: 70px;
+     width: 70px; 
+    border-radius: 50%; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+     position: relative; 
+    top: 2%; 
+    left: 2%; 
+    background-color: #fff;
+     border:4px solid white 
+  }
+
+  #testi13 {
+    display: flex;
+     justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    margin-bottom: 30px; 
+    position: relative; 
+    top:-12%; 
+    margin-top: 40px;
+  }
+  #testi14 {
+    font-size: 17px; 
+     margin-bottom: 0px; 
+    text-align: center;
+  }
+  #testi15 {
+    font-size: 15px;
+     margin-top:  5px; 
+    margin-bottom: 0px; 
+    text-align: center;
+  }
+  #testi16 {
+    display: flex; 
+    font-size: 13px;  
+    margin: 15px;
+     text-align: center;
+  }
+
+  #formdiv1{
+    display: flex; 
+    flex-wrap: wrap;
+    margin-top: -6%; 
+    width: 60%;
+  }
+
+  #formp1{
+    color: white;
+     font-size: 45px;
+      margin-bottom: 25px;
+  }
+  #formp2{
+    color: white; 
+    font-size: 28px;
+    margin: 5px;
+  }
+  #formp3{
+    color: white;
+    font-size: 28px;
+    margin: 5px;
+  }
+  #getq1{
+    height: 90%; 
+    width: 90%;
+  }
+  #getq{
+    display: flex; 
+    flex-grow: inherit;  
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1700px)    {
+  #lastdiv1{
+    font-size: 25px;
+     color: #fff;
+     display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+  }
+  #testi10{
+    margin-left: 36px;
+  }
+
+  #getq{
+    display: flex; 
+    flex-grow: inherit;  
+    justify-content: center;
+  }
+
+  #getq1{
+    height: 90%; 
+    width: 90%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">  &times;</span>
+    <section style="background-image: url(./assets/img1.jpg); width: 100%; display: flex; justify-content: center;" >
+        <div style="display: flex; justify-content: space-around; align-items: center; width: 90%; margin-left: 40px; height: 65vh; ">
+            <div id="formdiv1">
+                <div style="color: white; font-size: 25px;  margin: 10px; ">
+                    <p  id="formp1"  >Are you a start-up company  <br/>or an established organisation?</p>
+                <p id="formp2" >And looking for generating business leads or want to <br/></p>
+                <p id="formp3" >create a unique identity across your TG?</p>
+                </div>
+                </div>  
+                <div class="email-block" style="background-color: white; height: 300px;  border-radius: 25px; margin-right: 15%;">
+                  <form action=""  style="width: 80%; gap: 20px; "> 
+                    <p style="margin-top: 40px; font-size: 18px; "> Please Submit your details here.</p>
+                       <label style="padding-bottom: 5px; font-size: 15px; font-family: sans-serif;"><b>Email</b></label><br> 
+                      <input type="text" name="firstname" style="width: 90%; margin-top: 10px; box-sizing: border-box; border: none; border-bottom: 1px solid grey;"><br> <br>
+                       <label style="padding-top: 5px; padding-bottom: 5px; font-size: 15px; margin-top: 5px; font-family: sans-serif;"> <b>Password</b></label><br> 
+                       <input type="Password" name="password" style="width: 90%; margin-top: 10px; box-sizing: border-box; border: none; border-bottom: 1px solid  grey"><br> 
+                       <br><button type="submit" id="btn1"  style=" background-color: red;height: 30px ;color: white;width: 95% ;border:red; border-radius: 5px; display: flex; justify-content: center ; align-items: center; text-align: center;">
+                      <p>Submit request</p><p style='font-size:30px; margin-left: 20px; text-align: center;'>&#8594;</p>
+                       </button>
+                      </form> 
+                  </div>              
+        </div>
+    </section>
+    <div style="display: flex; justify-content: center; height: 5vh; margin: 20px;">
+ <img src="./assets/img8.png" alt="">
+    </div>
+    <section style="display: flex; justify-content: center;" >
+     <div style="display: flex; justify-content: center; align-items: center; margin: 20px; width: 80%; gap: 10px;">
+        <div  style="padding: 10px; width: 17%; height: 400px ; color: #000 ; background-color: #fbb516; display: flex; justify-content: center; flex-direction: column; align-items: center; flex-grow: inherit; border-radius: 10px; " onmouseover="this.style.backgroundColor='#c28e14'" onmouseout="this.style.backgroundColor='#fbb516'">
+           <div style="color: white; display: flex; justify-content: center; flex-direction: column; align-items: center;">
+          <img src="./assets/icon3.png" alt="" height="50" width="70">
+          <p style="margin: 5px;">Starter</p>
+        </div> 
+         <hr style="color: white; width: 100%;">
+        <div style="display: flex; justify-content: center; color: #fff; flex-direction: column; flex-grow: inherit; border-radius: 10px; align-items: center;">
+            <p id="box1" >Brand Naming</p>
+            <p id="box1" >Logo design</p>
+            <p  id="box1" >Logo guideline</p>
+            <p  id="box1" >Positioning Line</p>
+            <p  id="box1" >Website</p>
+            <p  id="box1" >Collaterals</p>
+            <p id="box1" >-</p>
+            <p  id="box1" >-</p>
+            <p  id="box1" >-</p>
+
+        </div>
+        <hr style="color: white; width: 100%;">
+        <div id="getq" >
+            <img id="getq1" src="./assets/icon7.png"  alt="">
+        </div>
+    </div>          
+    <div  style="padding: 10px; width: 17%; color: #505050;height: 400px ; background-color: #2cb04a; display: flex; justify-content: center; flex-direction: column; align-items: center; flex-grow: inherit; border-radius: 10px; " onmouseover="this.style.backgroundColor='#0d5f20'" onmouseout="this.style.backgroundColor='#2cb04a'">
+        <div style="color: white; display: flex; justify-content: center; flex-direction: column; align-items: center;">
+       <img src="./assets/icon4.png" alt="" height="50" width="70">
+       <p style="margin: 5px;">Booster</p>
+     </div> 
+      <hr style="color: white; width: 100%;">
+     <div style="display: flex; justify-content: center; color: #fff; flex-direction: column; flex-grow: inherit; border-radius: 25px;align-items: center;">
+      <p id="box1" >Brand Naming</p>
+      <p id="box1" >Logo design</p>
+      <p id="box1" >Logo guideline</p>
+      <p id="box1" >Positioning Line</p>
+      <p id="box1" >Website</p>
+      <p id="box1" >Collaterals</p>
+      <p id="box1" >-</p>
+      <p id="box1" >-</p>
+      <p id="box1" >-</p>
+     </div>
+     <hr style="color: white; width: 100%;">
+     <div id="getq" >
+         <img id="getq1" src="./assets/icon7.png"  alt="">
+     </div>
+ </div>    
+ <div style="padding: 10px; width: 17%; color: #505050; height: 400px; background-color: #6454a4; display: flex; justify-content: center; flex-direction: column; align-items: center; flex-grow: inherit; border-radius: 10px; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#3b3161'" onmouseout="this.style.backgroundColor='#6454a4'">
+    <div style="color: white; display: flex; justify-content: center; flex-direction: column; align-items: center;">
+   <img src="./assets/icon5.png" alt="" height="50" width="70">
+   <p style="margin: 5px;">Turbo</p>
+ </div> 
+  <hr style="color: white; width: 100%;">
+ <div style="display: flex; justify-content: center; color: #fff; flex-direction: column; align-items: center;">
+  <p id="box1" >Brand Naming</p>
+  <p id="box1" >Logo design</p>
+  <p  id="box1" >Logo guideline</p>
+  <p id="box1"  >Positioning Line</p>
+  <p  id="box1" >Website</p>
+  <p  id="box1" >Collaterals</p>
+  <p  id="box1" >Catalogue</p>
+  <p id="box1" >E-brochure</p>
+  <p id="box1" >Packaging design</p>
+ </div>
+ <hr style="color: white; width: 100%;">
+ <div id="getq" >
+     <img id="getq1" src="./assets/icon7.png"  alt="">
+ </div>
+</div>    
+<div  style="padding: 10px; width: 17%; color:#505050; height: 400px ; background-color: #f05940; display: flex; justify-content: center; flex-direction: column; align-items: center; flex-grow: inherit; border-radius: 10px; " onmouseover="this.style.backgroundColor='#912816'" onmouseout="this.style.backgroundColor='#f05940'">
+    <div style="color: white; display: flex; justify-content: center; flex-direction: column; align-items: center;">
+   <img src="./assets/icon6.png" alt="" height="50" width="70">
+   <p style="margin: 4px;">A-la-carte</p>
+ </div> 
+  <hr style="color: white; width: 100%;">
+ <div style="display: flex; justify-content: center;  flex-direction: column; align-items: center;">
+  <p style=" font-size: 14px; margin: 1px; color:rgba(0,0,0,0)">uygi</p>
+  <p style=" font-size: 12px; margin: 1px; color:rgba(0,0,0,0)">ugu</p>
+  <p id="lastdiv1" >Solutions <br>On Demand</p>
+  <p style=" font-size: 12px; margin: 1px; color:rgba(0,0,0,0)">Demand</p>
+  <p style=" font-size: 12px; margin: 1px; color:rgba(0,0,0,0)">Collaterals</p>
+  <p style=" font-size: 14px; margin: 1px; color:rgba(0,0,0,0)">Catalogue</p>
+  <p style=" font-size: 14px; margin: 1px; color:rgba(0,0,0,0)">guyfviu</p>
+ 
+ </div>
+ <hr style="color: white; width: 100%;">
+ <div id="getq" >
+     <img id="getq1" src="./assets/icon7.png"  alt="">
+ </div>
+</div>        
+     </div>
+    </section>
+    <section style="display: flex; justify-content: center; align-items: center; color: red;">
+        <h3>Our Clients</h3>
+    </section>
+<section style="display: flex; justify-content: center; align-items: center; margin-left: 12px;">
+
+  <div class="owl-carousel owl-theme" style="display: flex; justify-content: center; align-items: center; width: 64%; gap: 10px;"  id="testi10">
+    
+    <div class="item" id="testi11" >
+      <div id="testi12" >
+        <img src="./assets/testimonials/6.webp" style="border-radius: 50%;" alt="">
+      </div>
+      <div id="testi13"  loading="lazy">
+        <p id="testi14">Supriya Vashishta</p>
+        <p  id="testi15" >Chief Growth Officer - Nuraspace</p>
+        <p  id="testi16" > At Nura Space, Australia, we have been so delighted in dealing with the amazing team at BBD. They are always ready to
+          extend themselves in suggesting the best of creative ideas and brand strategies. However, the best part is their agility
+          of implemention. I would always recommend their services to any business who is serious about their brand.</p>
+      </div>
+    </div>
+    <div class="item" id="testi11" >
+      <div id="testi12" >
+        <img  src="./assets/testimonials/6.webp" style="border-radius: 50%;" alt="">
+      </div>
+      <div id="testi13"  loading="lazy">
+        <p id="testi14">Supriya Vashishta</p>
+        <p  id="testi15" >Chief Growth Officer - Nuraspace</p>
+        <p  id="testi16" > At Nura Space, Australia, we have been so delighted in dealing with the amazing team at BBD. They are always ready to
+          extend themselves in suggesting the best of creative ideas and brand strategies. However, the best part is their agility
+          of implemention. I would always recommend their services to any business who is serious about their brand.</p>
+      </div>
+    </div>
+    
+    <div class="item" id="testi11" >
+      <div id="testi12" >
+        <img src="./assets/testimonials/6.webp" style="border-radius: 50%;" alt="">
+      </div>
+      <div id="testi13"  loading="lazy">
+        <p id="testi14">Supriya Vashishta</p>
+        <p  id="testi15" >Chief Growth Officer - Nuraspace</p>
+        <p  id="testi16" > At Nura Space, Australia, we have been so delighted in dealing with the amazing team at BBD. They are always ready to
+          extend themselves in suggesting the best of creative ideas and brand strategies. However, the best part is their agility
+          of implemention. I would always recommend their services to any business who is serious about their brand.</p>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+    
+     <section style="height: 40vh;">
+      <div class="scroller" data-direction="right" data-speed="slow" style="background-color: red;height: 20vh; display :flex; justify-content: center; align-items: center; margin-top: 30px; ">
+        <div class="scroller__inner">
+          <img src="./assets/clients/white/1.png" height="120" width="200" loading="lazy" alt="communication agency in Delhi">
+          <img src="./assets/clients/white/2.png" height="120" width="200" loading="lazy" alt="communication agency in Delhi">
+          <img src="./assets/clients/white/3.png"  height="120" width="200" loading="lazy" alt="communication agency in Delhi">
+          <img src="./assets/clients/white/4.png"  height="120" width="200" loading="lazy" alt="communication agency in Delhi">
+          <img src="./assets/clients/white/5.png"  height="120" width="200" loading="lazy" alt="communication agency in Delhi">
+          <img src="./assets/clients/white/6.png"  height="120" width="200" loading="lazy" alt="communication agency in Delhi">
+          <img src="./assets/clients/white/7.png"  height="120" width="200" loading="lazy" alt="communication agency in Delhi">
+          <img src="./assets/clients/white/8.png"  height="120" width="200" loading="lazy" alt="communication agency in Delhi">
+          <img src="./assets/clients/white/9.png"  height="120" width="200" loading="lazy" alt="communication agency in Delhi">
+          <img src="./assets/clients/white/10.png"  height="120" width="200" loading="lazy" alt="communication agency in Delhi">
+          <img src="./assets/clients/white/11.png"  height="120" width="200" loading="lazy" alt="communication agency in Delhi">
+          <img src="./assets/clients/white/12.png"  height="120" width="200" loading="lazy" alt="communication agency in Delhi">
+          <img src="./assets/clients/white/13.png"  height="120" width="200" loading="lazy" alt="communication agency in Delhi">
+          <img src="./assets/clients/white/14.png"  height="120" width="200" loading="lazy" alt="communication agency in Delhi">
+          <img src="./assets/clients/white/15.png"  height="120" width="200" loading="lazy" alt="communication agency in Delhi">
+          <img src="./assets/clients/white/16.png"  height="120" width="200" loading="lazy" alt="communication agency in Delhi">
+          <img src="./assets/clients/white/17.png"  height="120" width="200" loading="lazy" alt="communication agency in Delhi">
+          <img src="./assets/clients/white/18.png"  height="120" width="200" loading="lazy" alt="communication agency in Delhi">
+          <img src="./assets/clients/white/19.png"  height="120" width="200" loading="lazy" alt="communication agency in Delhi">
+          <img src="./assets/clients/white/20.png"  height="120" width="200" loading="lazy" alt="communication agency in Delhi">
+          <img src="./assets/clients/white/21.png"  height="120" width="200" loading="lazy" alt="communication agency in Delhi">
+          <img src="./assets/clients/white/22.png"  height="120" width="200" loading="lazy" alt="communication agency in Delhi">
+          <img src="./assets/clients/white/24.png"  height="120" width="200" loading="lazy" alt="communication agency in Delhi">
+          <img src="./assets/clients/white/25.png"  height="120" width="200" loading="lazy" alt="communication agency in Delhi">
+        </div>
+      </div>
+     </section>
+  </div>
+</div>
+<script>
+  jQuery(document).ready(function ($) {
+
+setInterval(function () {
+    moveRight();
+}, 3000);
+
+var slideCount = $('#slider ul li').length;
+var slideWidth = $('#slider ul li').width();
+var slideHeight = $('#slider ul li').height();
+var sliderUlWidth = slideCount * slideWidth;
+
+$('#slider').css({ width: slideWidth, height: slideHeight });
+
+$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+
+$('#slider ul li:last-child').prependTo('#slider ul');
+
+function moveLeft() {
+    $('#slider ul').animate({
+        left: + slideWidth
+    }, 200, function () {
+        $('#slider ul li:last-child').prependTo('#slider ul');
+        $('#slider ul').css('left', '');
+    });
+};
+
+function moveRight() {
+    $('#slider ul').animate({
+        left: - slideWidth
+    }, 200, function () {
+        $('#slider ul li:first-child').appendTo('#slider ul');
+        $('#slider ul').css('left', '');
+    });
+};
+
+$('a.control_prev').click(function () {
+    moveLeft();
+});
+
+$('a.control_next').click(function () {
+    moveRight();
+});
+
+});    
+
+</script>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<script>
+  const scrollers = document.querySelectorAll(".scroller");
+
+// If a user hasn't opted in for recuded motion, then we add the animation
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  addAnimation();
+}
+
+function addAnimation() {
+  scrollers.forEach((scroller) => {
+    // add data-animated="true" to every `.scroller` on the page
+    scroller.setAttribute("data-animated", true);
+
+    // Make an array from the elements within `.scroller-inner`
+    const scrollerInner = scroller.querySelector(".scroller__inner");
+    const scrollerContent = Array.from(scrollerInner.children);
+
+    // For each item in the array, clone it
+    // add aria-hidden to it
+    // add it into the `.scroller-inner`
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      scrollerInner.appendChild(duplicatedItem);
+    });
+  });
+}
+
+</script>
+
+<script>
+  $(function() {
+    // Owl Carousel
+    var owl = $(".owl-carousel");
+    owl.owlCarousel({
+      items: 3,
+      loop: true,
+      nav: false,
+      dots:false,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      responsive: {
+        0: {
+          items: 1 // 2 items will be visible on screen sizes below 800px
+        },
+        800: {
+          items: 2 // 3 items will be visible on screen sizes 800px and above
+        },
+        1150: {
+          items: 3 // 3 items will be visible on screen sizes 800px and above
+        }
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
